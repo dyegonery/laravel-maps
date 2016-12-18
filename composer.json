@@ -21,5 +21,5 @@
             "Dnery\\LaravelMaps\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
