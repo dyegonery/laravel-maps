@@ -6,9 +6,9 @@ class LaravelMaps {
 
 	public $base_url = 'https://maps.googleapis.com/maps/api/';
 
-	public function __construct()
+	public function __construct($api_key)
 	{
-		$this->api_key = $this->api_key;
+		$this->api_key = $api_key;
 	}
 
 	public function init($class)
