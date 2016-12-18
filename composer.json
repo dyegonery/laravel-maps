@@ -1,6 +1,7 @@
 {
     "name": "dnery/laravel-maps",
-    "description": "",
+    "description": "Simple package to integrate Google Maps WebServices with your Laravel 4 project.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Dyego Nery",
@@ -9,7 +10,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "illuminate/support": "4.2.*",
+        "laravel/framework": "4.2.*"
     },
     "autoload": {
         "classmap": [

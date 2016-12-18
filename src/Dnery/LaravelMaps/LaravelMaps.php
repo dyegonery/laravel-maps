@@ -23,6 +23,9 @@ class LaravelMaps {
 			case 'distance-matrix':
 				$res = new DistanceMatrix();
 				break;
+			case 'directions':
+				$res = new Directions();
+				break;
 			default:
 				# code...
 				break;

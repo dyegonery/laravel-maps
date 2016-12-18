@@ -2,7 +2,7 @@
 
 class Directions extends LaravelMaps {
 
-	public function exec($params = [])
+	public function process($params = [])
 	{
 		$params['key'] = $this->api_key;
 		$url = $this->base_url . 'directions/json?' . http_build_query($params);
