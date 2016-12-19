@@ -28,9 +28,9 @@ class LaravelMapsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['laravel-maps'] = $this->app->share(function($app)
+		$this->app->bind('laravel-maps', function($app)
 		{
-			return new LaravelMaps;
+			return new LaravelMaps($app['config']);
 		});
 	}
 
