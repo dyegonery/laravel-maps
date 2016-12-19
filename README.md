@@ -34,30 +34,32 @@ Also add the Alias of the LaravelMaps package, in the aliases section:
 'LaravelMaps'	  => 'Dnery\LaravelMaps\Facades\LaravelMaps',
 ```
 
+Publish the configuration file of the package in your project:
+```
+php artisan config:publish dnery/laravel-maps
+```
+
 ## Usage
 
-Initializing the Laravel Maps
+First, fill your api_key (you can find it in your painel at Google Developers Console) in the generated config file, located at ```app/config/packages/dnery/laravel-maps/config.php```.
+After this, all you need to do is initialize the LaravelMaps with the name of the webservice that you want to use.
 
 ```
-$maps = new LaravelMaps();
-
-$maps->api_key = 'you_api_key';
-
-$service = $maps->init('service');
+$geocode = Laravel::init('geocode')
 ```
 
-Currently, LaravelMaps can integrate with 5 webservices from Google Maps:
+Currently, LaravelMaps can integrate with 4 webservices from Google Maps:
 	- Google Maps Distance Matrix API (https://developers.google.com/maps/documentation/distance-matrix/?hl=pt-br)
-		- Use ```$maps->init('distance-matrix');```
+		- Use ```LaravelMaps::init('distance-matrix');```
 
 	- Google Places API Web Service (https://developers.google.com/places/web-service/?hl=pt-br)
-		- Use ```$maps->init('places');```
+		- Use ```LaravelMaps::init('places');```
 
 	- Google Maps Geocoding Api (https://developers.google.com/maps/documentation/geocoding/?hl=pt-br)
-		- Use ```$maps->init('geocode');```
+		- Use ```LaravelMaps::init('geocode');```
 
 	- Google Maps Directions API (https://developers.google.com/maps/documentation/directions/?hl=pt-br)
-		- Use ```$maps->init('directions');```
+		- Use ```LaravelMaps::init('directions');
 
 
 
