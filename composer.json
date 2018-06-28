@@ -2,6 +2,8 @@
     "name": "dnery/laravel-maps",
     "description": "Simple package to integrate Google Maps WebServices with your Laravel application.",
     "license": "MIT",
+    "keywords": ["laravel", "webservice", "google", "maps", "laravel 5"],
+    "type": "library",
     "authors": [
         {
             "name": "Dyego Nery",
