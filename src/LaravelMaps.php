@@ -27,7 +27,7 @@ class LaravelMaps {
 				$res = new Directions($this->api_key);
 				break;
 			default:
-				# code...
+				abort(500);
 				break;
 		}
 
