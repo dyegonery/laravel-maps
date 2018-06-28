@@ -26,7 +26,10 @@
         "laravel": {
             "providers": [
                 "Dnery\\LaravelMaps\\LaravelMapsServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "LaravelMaps": "Dnery\\LaravelMaps\\Facades\\LaravelMaps"
+            }
         }
     }
 }
