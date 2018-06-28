@@ -1,12 +1,10 @@
 <?php namespace Dnery\LaravelMaps;
 
-use Illuminate\Config\Repository as Config;
-
 class LaravelMaps {
 
 	protected $api_key = null;
 
-	public $base_url = 'https://maps.googleapis.com/maps/api/';
+	protected $base_url = 'https://maps.googleapis.com/maps/api/';
 
 	public function __construct()
 	{
