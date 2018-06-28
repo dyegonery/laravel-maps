@@ -9,7 +9,7 @@ class LaravelMapsServiceProvider extends ServiceProvider {
 	 *
 	 * @var bool
 	 */
-	protected $defer = false;
+	protected $defer = true;
 
 	/**
 	 * Bootstrap the application events.
@@ -30,7 +30,7 @@ class LaravelMapsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bind('laravel-maps', function($app)
+		$this->app->singleton('laravel-maps', function($app)
 		{
 			return new LaravelMaps();
 		});
@@ -43,7 +43,7 @@ class LaravelMapsServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array(LaravelMaps::class);
 	}
 
 }
