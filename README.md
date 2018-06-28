@@ -9,7 +9,7 @@ Laravel Maps is a simple package that helps you connect laravel with Google Maps
 Install this package on your Laravel 5.5+ with the follow command:
 
 ```
-$ composer require dnery/laravel-maps:2.1.0
+$ composer require dnery/laravel-maps:2.1.*
 ```
 
 Or add the package to require object of your composer.json file
@@ -17,7 +17,7 @@ Or add the package to require object of your composer.json file
 ```
 {
     "require": {
-        "dnery/laravel-maps": "dev-master"
+        "dnery/laravel-maps": "2.1.*"
     }
 }
 ```
