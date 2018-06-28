@@ -18,7 +18,9 @@ class LaravelMapsServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('dnery/laravel-maps');
+		$this->publishes([
+			__DIR__ . '/config/config.php' => config_path('google_maps.php'),
+		]);
 	}
 
 	/**
@@ -30,7 +32,7 @@ class LaravelMapsServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind('laravel-maps', function($app)
 		{
-			return new LaravelMaps($app['config']);
+			return new LaravelMaps();
 		});
 	}
 
