@@ -50,19 +50,19 @@ $geocode = Laravel::init('geocode')
 
 Currently, LaravelMaps can integrate with 4 webservices from Google Maps:
 
-⋅⋅* Google Maps Distance Matrix API (https://developers.google.com/maps/documentation/distance-matrix/?hl=pt-br)
+* Google Maps Distance Matrix API (https://developers.google.com/maps/documentation/distance-matrix/?hl=pt-br)
 
 ```LaravelMaps::init('distance-matrix');```
 
-⋅⋅* Google Places API Web Service (https://developers.google.com/places/web-service/?hl=pt-br)
+* Google Places API Web Service (https://developers.google.com/places/web-service/?hl=pt-br)
 
 ```LaravelMaps::init('places');```
 
-⋅⋅* Google Maps Geocoding Api (https://developers.google.com/maps/documentation/geocoding/?hl=pt-br)
+* Google Maps Geocoding Api (https://developers.google.com/maps/documentation/geocoding/?hl=pt-br)
 
 ```LaravelMaps::init('geocode');```
 
-⋅⋅* Google Maps Directions API (https://developers.google.com/maps/documentation/directions/?hl=pt-br)
+* Google Maps Directions API (https://developers.google.com/maps/documentation/directions/?hl=pt-br)
 	
 ```LaravelMaps::init('directions');```
 
