@@ -19,7 +19,7 @@ class LaravelMapsServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->publishes([
-			__DIR__ . '/config/config.php' => config_path('google_maps.php'),
+			__DIR__ . '/../config/config.php' => config_path('google_maps.php'),
 		]);
 	}
 
