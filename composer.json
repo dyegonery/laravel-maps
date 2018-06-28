@@ -21,5 +21,12 @@
             "Dnery\\LaravelMaps\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dnery\\LaravelMaps\\LaravelMapsServiceProvider"
+            ]
+        }
+    }
 }
